@@ -1,6 +1,6 @@
 // Service worker for "Install the app" (B40, FEATURES.pwa). Network first, so a new build shows at once; what was
 // fetched before stays available offline. Same-origin GET requests only. Bump VERSION to drop old caches.
-const VERSION = "ekky-s6-20";
+const VERSION = "ekky-s6-21";
 self.addEventListener("install", e => self.skipWaiting());
 self.addEventListener("activate", e => e.waitUntil(caches.keys().then(keys =>
   Promise.all(keys.filter(k => k !== VERSION).map(k => caches.delete(k)))).then(() => self.clients.claim())));

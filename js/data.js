@@ -6,11 +6,11 @@ const CONFIG = {
   // Owner: "no need deploy to ekkyarya.com in this case". The new site keeps its own host, so siteUrl stays empty:
   // share links and the host printed on cards use siteBase() (location.origin, e.g. the GitHub Pages URL).
   siteUrl: "",
-  website: "https://ekkyarya.com/",           // Ekky's existing website: credit line and watermark, linked as "Ekky's website"
+  website: "https://ekkyarya.com/",           // this site's own domain since 10-29 (GitHub Pages custom domain): credit line and watermark
   email: "ekkyarya87@gmail.com",              // business email: Hire Ekky, Final Quest, quick actions
   emailPersonal: "ekkyaryasm@gmail.com",      // personal/inquiries; not shown in round 1 (one clear address is easier to act on)
   whatsapp: "",                               // owner to send; the WhatsApp button stays hidden until then
-  contactPage: "https://ekkyarya.com/contact/",
+  contactPage: "",                            // the old site's /contact/ is gone now that ekkyarya.com serves this site
   links: {
     instagram: "https://www.instagram.com/ekkyarya/",
     behance: "https://www.behance.net/ekkyarya",          // confirmed by the owner
