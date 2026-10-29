@@ -1,10 +1,32 @@
 {
   "version": 1,
-  "contact": { "email": "", "priceLine": { "en": "", "id": "" } },
-  "links": { "instagram": "", "behance": "", "linkedin": "", "website": "", "tiktok": "", "youtube": "", "x": "" },
+  "contact": {
+    "email": "",
+    "priceLine": {
+      "en": "",
+      "id": ""
+    }
+  },
+  "links": {
+    "instagram": "",
+    "behance": "",
+    "linkedin": "",
+    "website": "",
+    "tiktok": "",
+    "youtube": "",
+    "x": ""
+  },
   "features": {},
   "projects": [],
   "hidden": [],
   "order": [],
-  "copy": { "en": {}, "id": {} }
+  "copy": {
+    "en": {},
+    "id": {}
+  },
+  "icons": {
+    "map": {
+      "assets/ui/ekky.png": "assets/ui/u/ekky-own-mvtt8lti.png"
+    }
+  }
 }
