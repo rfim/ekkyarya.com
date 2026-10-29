@@ -65,6 +65,8 @@ async function runConfig(browser,url,dev,lang){
   const cfg=`${dev}-${lang}`,phone=dev==='phone';const rows=[];
   async function ctx(errs,withRoutes){const c=await browser.newContext(phone?{...IPHONE}:{viewport:{width:1440,height:900}});
     await c.addInitScript(l=>{try{if(!sessionStorage.getItem('qa-init')){localStorage.setItem('lang',l);sessionStorage.setItem('qa-init','1')}}catch(e){}},lang);
+    // every test starts from the site without admin data, whatever Ekky has published to the real data/ files; a test's own route (added later) wins
+    await c.route(/\/data\/(site|history)\.json(\?|$)/,r=>r.fulfill({status:404,contentType:'text/plain',body:'Not Found'}));
     const reqs=[];c.on('request',r=>reqs.push(r.url()));const p=await c.newPage();p.on('pageerror',e=>errs.push(e.message));return {c,p,reqs}}
   const jobs=[];const ONLY=process.env.ONLY&&new RegExp(process.env.ONLY,'i');const T=(name,fn)=>{if(!ONLY||ONLY.test(name))jobs.push({i:jobs.length,name,fn})};
   async function runJob(job,again){const {i,name,fn}=job;let st='PASS',msg='';const errs=[];const x=await ctx(errs);
