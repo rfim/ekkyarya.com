@@ -28,6 +28,34 @@
      "h": 256
     }
    ]
+  },
+  {
+   "at": "2026-10-29T17:22:48.458Z",
+   "by": "rfim",
+   "kind": "publish",
+   "title": "Icons: own picture for ekky",
+   "titleId": "Ikon: gambar sendiri untuk ekky",
+   "changes": [
+    {
+     "area": "icons",
+     "en": "Icons: own picture for ekky",
+     "id": "Ikon: gambar sendiri untuk ekky"
+    }
+   ],
+   "files": [
+    "assets/ui/u/ekky-own-mvtt9w60.png",
+    "data/site.json"
+   ],
+   "uploads": [
+    {
+     "path": "assets/ui/u/ekky-own-mvtt9w60.png",
+     "for": "Icon ekky",
+     "bytes": 22521,
+     "sha256": "5e4eab86c408564de2c42b23ced728dc13b85cd4ad3b84697c476de9d62267f8",
+     "w": 256,
+     "h": 256
+    }
+   ]
   }
  ]
 }
